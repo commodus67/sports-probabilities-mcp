@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.commodus67/sports-probabilities-mcp",
+  "title": "Sports Probabilities MCP",
+  "description": "Monte Carlo NFL, MLB and soccer odds, plus model-vs-market edge from live prices",
+  "version": "0.0.11",
+  "repository": {
+    "url": "https://github.com/commodus67/sports-probabilities-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://commodus67--sports-probabilities-mcp.apify.actor/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token as a bearer token, e.g. 'Bearer apify_api_...'",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
